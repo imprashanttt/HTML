@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background: blue;
+            width: 100vw;
+            height: 100vh;
+
+        }
+
+        .box {
+            border-radius: 50%;
+            position: absolute;
+            width: 133px;
+            height: 133px;
+            background-color: yellow;
+            animation-name: prashu;
+            
+            animation-name:translate-x;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            
+            animation-name:translate-y;
+            animation-direction: alternate;
+            animation-duration: 3s;
+            animation-timing-function:ease-in-out;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            
+
+
+        }
+        
+        @keyframes translate-x{
+            from{
+                left:0;
+            }
+            to{
+                left:100%;
+            }
+        }
+        @keyframes translate-y{
+            from{
+                bottom:0;
+            }
+            to{
+                bottom:100%;
+            }
+        }
+
+
+        @keyframes none {
+            0% {
+                bottom: 0;
+                left: 0;
+
+            }
+
+            20% {
+                bottom: 344px;
+                left: 0;
+            }
+
+            30% {
+                bottom: 0;
+                left: 344px;
+            }
+
+            40% {
+                bottom: 344px;
+                left: 500px;
+            }
+
+            50% {
+                bottom: 0;
+                left: 800px;
+
+            }
+
+            60% {
+                bottom: 344px;
+                left: 800px;
+            }
+
+            70% {
+                bottom: 0;
+                left: 1200px;
+            }
+
+            85% {
+                bottom: 344px;
+                left: 1200px;
+            }
+
+            100% {
+                bottom: 0;
+                left: 1500px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>

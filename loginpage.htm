@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        
+        }
+        .info{
+            margin:33px auto;
+            padding:12px;
+            color:rgb(0, 0, 0);
+            background-color:rgb(137, 137, 137);
+            width:50%;
+            border:4px dashed black;
+
+        }
+        h1{
+            margin:33px auto;
+            text-align:center;
+            
+            
+        }
+        h1 {
+            margin: 33px auto;
+            text-align: center;
+            /* Styling for the h1 element */
+            font-size: 32px;
+            color: #333; /* Text color */
+            background-color: #f4f4f4; /* Background color */
+            padding: 10px 20px; /* Padding around the text */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 2px 2px 5px rgba(240, 0, 0, 0.135); /* Box shadow */
+        }
+        .name{
+            margin:auto;
+            padding:4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .EMAIL{
+            margin:auto;
+            padding:4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .Password{
+            margin:auto;
+            padding:4px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .button{
+            margin: 12px auto;
+            text-align:center;
+            
+         
+            
+           
+        }
+        a{
+            text-decoration: none;
+            border:2px solid red;
+            background-color: blue;
+            color:black;
+        }
+        div a:hover{
+            text-decoration: none;
+            border:2px solid rgb(149, 23, 27);
+            background-color:GREY;
+            color:black;
+        }
+        a:visited{
+            text-decoration: none;
+            border:2px solid rgb(0, 0, 0);
+            background-color:beige;
+            color:black;
+        }
+        input.reset:hover{
+          background-color: hotpink;
+          color:black;
+          border:2px solid red;
+          cursor: pointer;
+            
+           
+        }
+       input.submit:hover{
+            background-color: blue;
+            color:aliceblue;
+            border: 2px solid black;
+            cursor: pointer;
+
+        }
+        
+
+        
+        </style>
+</head>
+
+<body>
+    <div id="form" class="info">
+        <h1>Registration</h1>
+        <form action="result.htm" method="get" target="_blank">
+            <div class="name">
+                <label for="Name">Name</label>
+                <input type="text" id="Name" class="Name" required >
+
+
+            </div>
+            <div class="EMAIL">
+                <label for="Name">EMAIL</label>
+                <input type="email" id="EMAIL" class="email" required >
+
+
+            </div>
+            <div class="Password">
+                <label for="Password">Password</label>
+                <input type="password" id="Password" class="password">
+            </div>
+            <div class="forget">
+                <a href="https://www.google.com" target="_blank">Forget</a>
+            </div>
+            <div class="button">
+                
+                <input type="submit" class="submit" value="submit">
+           
+                
+                <input type="reset" class="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

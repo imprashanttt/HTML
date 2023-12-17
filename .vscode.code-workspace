@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"markdown.validate.enabled": true,
+		"C_Cpp.intelliSenseEngineFallback": "Enabled",
+		"files.associations": {
+			"math.h": "c",
+			"stdio.h": "c",
+			"APNACOLLEGE1.C": "cpp"
+		},
+		"favorites.resources": [
+			{
+				"filePath": ".vscode\\tempCodeRunnerFile.c",
+				"group": "Default"
+			}
+		]
+	}
+}

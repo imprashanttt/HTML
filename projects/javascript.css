@@ -1,0 +1,30 @@
+
+.container{
+    height:1000vh;
+    width:1000vw;
+    font-weight: 900;
+    background-color: red;
+}
+#box{
+    height:1000px;
+    width:1020px;
+    position:relative;
+    top:233px;
+    left:44px;
+    color:white;
+    background-color: green;
+}
+button{
+    width:100px;
+    height:50px;
+    color:black;
+    text-align:center;
+}
+.black{
+    background-color: black;
+    color:white;
+}
+.white{
+    background-color: white;
+    color:black;
+}

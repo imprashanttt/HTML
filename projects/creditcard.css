@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: poppins, sans-serif;
+    background-color: white;
+}
+
+.creditcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    
+    width: 400px;
+    height: 233px;
+    position:absolute;
+    top:177px;
+
+
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 23px;
+    box-shadow: 0px 2px 7px 1px #252323;
+   
+}
+header {
+    background-color: black;
+    width: 80%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 23px;
+    top: 14px;
+}
+img{
+    background-color: black;
+}
+.chip{
+    filter:invert(1);
+    width:39px;
+    height:39px;
+}
+span{
+    background-color: black;
+}
+.carddetails{
+    position:relative;
+    bottom:8px;
+    margin:0px 12px;
+    width:90%;
+    height:40%;
+    background-color: black;
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+.number{
+    background-color: black;
+}
+h5{
+    font-weight: 400;
+    background-color: black;
+    font-size: 18px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.name{
+    font-size: 18px;
+}
+.valid{
+    align-self:flex-end;
+    background-color: black;
+}
+h6{
+    background-color: black;
+    font-size:13px;
+}
+h4{
+    color:white;
+    background-color: black;
+    font-size:13px;
+    font-weight: 200;
+    margin-top:23px;
+}
+

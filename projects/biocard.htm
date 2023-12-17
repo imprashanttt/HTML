@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: white;
+        }
+
+        body {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: cover;
+
+
+
+        }
+      
+
+        .profile {
+            border-radius:10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: cover;
+            max-width: 400px;
+            width: 100%;
+            padding:25px;
+            background: black;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            position:relative;
+        }
+        .profile::before{
+            content: '';
+            position:absolute;
+            top:0;
+            left:0;
+            height:36%;
+            width:100%;
+            background:blue;
+            border-radius:2px;
+
+        }
+
+        .profile .image {
+            position: relative;
+            height: 150px;
+            width: 150px;
+            background: blue;
+            border-radius: 50%;
+            padding: 3px;
+            margin-top:12px;
+
+
+
+        }
+
+        .image .profile-img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid grey;
+
+        }
+
+        .bio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top:12px;
+        }
+
+        .social-media {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+        .button{
+            background-color: blue;
+            border:none;
+            border-radius :24px;
+            width:123px;
+            height:23px;
+            margin-top:12px;
+            margin-left:12px;
+            cursor:pointer;
+
+        }
+
+        .links {
+            display:flex;
+            justify-content: center;
+            text-decoration: none;
+            align-items: center;
+            height:34px;
+            width:34px;
+            margin: 0 12px;
+            background-color: blue;
+            border-radius:50%;
+        
+        }
+        .info{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            
+          
+
+        }
+        .info .data{
+
+            margin-left:22px;
+            margin-top:22px;
+            margin-bottom:22px;
+
+            border-right : 2px solid white;
+        }
+        .number{
+            margin-right:12px;
+        }
+        .info .data:nth-child(3){
+            border-right : none;
+
+        }
+    </style>
+
+<body>
+    <div class="profile">
+
+        <div class="image">
+            <img src="newimg.jpg" alt="" class="profile-img">
+        </div>
+        <div class="bio">
+            <span>Engineer</span>
+            <span>Blogger&facebook</span>
+        </div>
+        <div class="social-media">
+            <a href="#" class="links" style="background-color: blue;">
+                <i class='bx bxl-facebook-circle'></i></a>
+            <a href="#" class="links"   style="background-color:rgb(112, 187, 190);"><i class='bx bxl-twitter'></i></a>
+            <a href="#" class="links"   style="background-color:rgb(208, 32, 208);"> <i class='bx bxl-instagram'></i></a>
+            <a href="#" class="links"   style="background-color:red;"><i class='bx bxl-youtube'></i></a>
+
+
+
+        </div>
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+        <div class="info">
+            <div class="data">
+                <i class='bx bx-message-rounded'></i>
+                <span class="number">120k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-heart'></i>
+                <span class="number">60k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-share'></i>
+                <span class="number">6k</span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

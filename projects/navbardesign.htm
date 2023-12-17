@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <title>Navbar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Roboto+Condensed:wght@700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Bitter', serif;
+            font-family: 'Roboto Condensed', sans-serif;
+
+
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: white;
+        }
+
+        .nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+
+
+
+        ul {
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            cursor: pointer;
+            flex-wrap: wrap;
+
+        }
+
+        .img img {
+            width: 172px;
+            margin: 12px;
+        }
+
+        li img {
+
+            width: 25px;
+        }
+
+        li span {
+            padding: 0px 8px;
+        }
+
+        @media only screen and (max-width:400px) {
+            .img img {
+                width: 100px;
+
+            }
+
+        }
+
+        .gridbox {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: repeat(7,1fr); */
+            /* background: blue; */
+            /* border: 2px solid red; */
+            /* row-gap:20px; */
+            /* column-gap:20px; */
+            height: 800px;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+        }
+
+        div .box {
+            text-align: center;
+            width: 92%;
+            height: 86%;
+            background-color: rgb(229, 235, 235);
+
+
+
+
+        }
+
+        button {
+            margin: 43px 15px 6px 20px;
+            height: 50px;
+            width: 152px;
+            cursor: pointer;
+
+
+        }
+
+        .botton1 {
+            background-color: #00b6d1;
+            color: white;
+            text-align: center;
+            border-radius: 2px;
+            font-size: 17px;
+            border: none;
+
+
+
+
+
+
+        }
+
+        .botton2 {
+            font-size: 17px;
+            border: none;
+            color: white;
+            background-color: #5cb85c;
+            text-align: center;
+            border-radius: 2px;
+            border: none;
+        }
+
+        .intro img {
+            width: 50px;
+
+        }
+
+        .intro h3 {
+            display: inline-block;
+        }
+
+        .intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .download {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .new-button {
+            text-align: center;
+            background: rgb(75, 179, 243);
+            border: none;
+            border-radius: 2px;
+            width: 94%;
+
+        }
+
+        .download span {
+            margin-bottom: 24px;
+
+
+
+
+
+        }
+
+        .download p {
+            font-size: 33px;
+            text-align: center;
+            width: 63vw;
+        }
+
+        .download span img {
+            margin: 7px 31px 0 31px;
+            width: 78px;
+
+
+        }
+
+        b {
+            font-size: 30px;
+        }
+
+        small {
+            font: 10px;
+            margin-left: 19px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <div class="img">
+                <img class="logo1" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png" alt="">
+            </div>
+            <div class="navlist">
+                <ul>
+                    <li><span>Product</span><svg fill="#000000" height="12px" width="12px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_225_"
+                                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                                </path>
+                            </g>
+                        </svg></li>
+                    <li><span>Pricing</span><svg fill="#000000" height="12px" width="12px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_225_"
+                                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                                </path>
+                            </g>
+                        </svg></li>
+                    <li><span>Resource</span><svg fill="#000000" height="12px" width="12px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_225_"
+                                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                                </path>
+                            </g>
+                        </svg></li>
+                    <li><span>About us</span><svg fill="#000000" height="12px" width="12px" version="1.1" id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 330 330" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path id="XMLID_225_"
+                                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z">
+                                </path>
+                            </g>
+                        </svg></li>
+
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"
+                            alt="no image found"></li>
+                </ul>
+
+            </div>
+    </header>
+    <section class="download">
+
+        <span>
+            Download <b>UltraEdit</b> for Windows
+            <img src="https://www.ultraedit.com/wp-content/uploads/2022/10/Reviews.png" alt="Review">
+        </span>
+        <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text
+            editor.
+        </p>
+        <div class="buttons">
+            <button class="new-button"><a href="Firefox Installer.exe">Download Mac or Linux Version </a></button>
+        </div>
+
+    </section>
+    <div class="intro">
+
+        <img src="https://www.ultraedit.com/wp-content/uploads/2022/11/UE.png" alt="logo">
+        <h3>Download UltraEdit <small> v2023.1(released 08/16/2023) | Hotfix</small></h3>
+    </div>
+    <div class="container">
+        <div class="gridbox">
+            <div class="box1 box">
+                <h3>English</h3>
+                <p>England</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box2 box">
+                <h3>Deutsch</h3>
+                <p>German</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box3 box">
+                <h3>Italiano</h3>
+                <p>Italian</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box4 box">
+                <h3>Español</h3>
+                <p>spanish</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box5 box">
+                <h3>français</h3>
+                <p>French</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box6 box">
+                <h3>Português brasileiro</h3>
+                <p>Brazilian Portuguese</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box7 box">
+                <h3>日本</h3>
+                <p>Japanese</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box8 box">
+                <h3>한국어</h3>
+                <p>Korean</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box9 box">
+                <h3>中国</h3>
+                <p>chinese</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+            <div class="box10 box">
+                <h3>中國</h3>
+                <p>Traditional chinese</p>
+                <button class="botton1"><a href="Firefox installer.exe">Download 64-bit</a> </button>
+                <button class="botton2"><a href="Firefox installer.exe">Download 32-bit</a></button>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrainDrift</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background: url(wallpaper.webp) no-repeat center center/cover;
+            width: 100vw;
+            height: 100vh;
+            s
+        }
+
+        header {
+            display: flex;
+            background-color: none;
+
+        }
+
+        .logo {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+        }
+
+        .navigation {
+            position: absolute;
+            left: 37%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+
+        }
+
+        nav ul a {
+            text-decoration: none;
+            margin: 10px;
+            padding: 12px;
+            color: white;
+            text-transform: capitalize;
+            font-weight: bold;
+            font-size: large;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .login {
+            position: absolute;
+            right: 23px;
+            top: 9px;
+            background: transparent;
+            color: white;
+
+
+        }
+
+        button {
+            width: 93px;
+            height: 35px;
+            cursor: pointer;
+        }
+
+        nav ul a:hover {
+            text-decoration: underline;
+
+        }
+
+        .login:hover {
+            color: black;
+            font-weight: bold;
+            background: white;
+
+        }
+
+        .form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60%;
+            width: 40%;
+            margin: 40px 0px 13px 313px;
+
+            border: 4px solid white;
+
+        }
+
+        form {}
+
+        input {
+            padding: 12px;
+            margin: 13px;
+            background: transparent;
+        }
+
+        .name label {
+            position: relative;
+            right: 70px;
+            color: white;
+        }
+
+        .password label {
+            position: relative;
+            right: 90px;
+            color: white;
+
+        }
+        .Password {
+            margin:12px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="" alt="logo">
+
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">contact</a></li>
+
+            </ul>
+
+        </nav>
+
+
+        <button class="login">Login</button>
+
+    </header>
+
+    <div class="form">
+        <form action="result.htm" method="get">
+            <div class="name">
+                <input type="text" name="name" class="Name">
+                <label for="name">Name</label>
+            </div>
+            <div class="password">
+                <input type="password" name="password" class="Password">
+                <label for="Password">Password</label>
+            </div>
+            <button type="submit">login</button>
+            <div class="forget">
+                <a href="#">forget Password</a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

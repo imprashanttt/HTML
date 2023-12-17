@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.main_box{
+    position:relative;
+    background-image: url(https://multimedia.bbycastatic.ca/multimedia/products/1500x1500/166/16683/16683893_2.jpg);
+    background-image: url(wallpaper.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height:100vh;
+    width:100%;
+
+}
+
+
+.social-media .link{
+    color:white
+}
+
+/* .navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 40vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    animation:translate-x;
+    animation-duration: 1s;
+    animation-delay: 1s;
+
+    
+
+
+
+
+} */
+/* @keyframes translate-x{
+    from{
+        transform: translate(0px, 0px);
+        
+        
+        
+    }
+    to{
+        
+        transform: translate(200px, 0px);
+        
+    }
+
+} */
+
+/* .navbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 100vh;
+    width: 40vw;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    /* transform: translate(0px,0px); */
+
+
+
+
+/* } */
+.main_box .navbar {
+    background-color:rgba(255,255,255,0.05);
+    position:fixed;
+    width: 20vw;
+    height: 100vh;
+    font-size: 20px;
+    left:-20vw;
+    overflow:hidden;
+    transition:all 0.3s linear;
+ 
+}
+
+
+
+h1 {
+    color: red;
+    text-align: center;
+    background: none;
+}
+
+.navbar ul li {
+    position:relative;
+    z-index: 100;
+    list-style: none;
+    text-align: center;
+    margin: 12px 0px 16px 0px;
+    width: 98%;
+    height: 66px;
+
+}
+
+.navbar li:hover {
+   border:1px solid white;
+    cursor: pointer;
+}
+
+
+li a {
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.navbar .social-media {
+    position:relative;
+    text-align: center;
+    
+
+}
+.social-media i{
+    opacity:0.66;
+}
+.social-media i:hover{
+    opacity:1;
+    
+}
+#check{
+    position:absolute;
+    left:10px;
+    cursor:pointer;
+}
+.main_box .btn_one input{
+    position:absolute;
+    left:16px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+}
+.navbar .btn_two input{
+    position:absolute;
+    left:20vw;
+    transition:all 0.3s linear;
+}
+#check:checked~.navbar{
+    left:0;
+
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.gettyimages.com/id/631150263/photo/young-woman-preparing-to-lift-a-barbell-in-gym.jpg?s=2048x2048&w=gi&k=20&c=ZLQd3cFCEiqcT6VDZ8gA5Pebuj0_eUrb64MJy2u6qQA=');
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            box-sizing: border-box;
+            color: white;
+            text-align: center;
+            text-transform: capitalize;
+            background-color: black;
+
+        }
+
+        .left {
+
+            position: absolute;
+            left: 20px;
+            top: 20px;
+
+        }
+
+        .left img {
+            width: 49px;
+            margin: -22px;
+        }
+
+        .right .first {
+            width: 13px;
+            transform: rotate(278deg);
+            margin: 19px;
+            filter: invert(100%);
+
+
+
+        }
+
+        .right input {
+
+            padding: 5px;
+            margin: -4px 5px;
+            position: absolute;
+            border: 2px solid rgb(10, 10, 10);
+            border-radius: 14px;
+            right: 76px;
+            top: 12px;
+        
+
+        }
+       
+        .right {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            align-items: center;
+        }
+        .right button{
+            position:absolute;
+            top:12px;
+            right:18px;
+            
+        }
+        .right button a{
+            text-decoration:none;
+            
+        }
+        .right button:hover{
+            background-color:yellow;
+            
+        }
+
+
+
+        .navbar {
+            margin: auto;
+            padding: 2px 3px;
+            overflow: auto;
+            display: inline-block;
+        }
+
+        .navbar li {
+            float: left;
+            padding: 4px;
+            list-style: none;
+            display: inline;
+            padding: 10px 12px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+
+
+        .container {
+            background-color: black;
+            width: 275px;
+            height: 317px;
+            margin: 135px 72px;
+            display: inline-block;
+            
+        }
+
+        h3 {
+            color:white;
+            width: 234px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 14px;
+
+        }
+
+        form {
+            margin: auto;
+            padding: 0px 63px;
+            
+
+
+
+        }
+
+        .form input {
+            background-color: black;
+            color: white;
+            text-transform: capitalize;
+            text-decoration-style: dashed;
+            border: 1px solid white(51, 5, 5, 0.381);
+            margin: 5px 4px;
+            border-radius: 2px;
+          
+
+        }
+
+
+
+
+
+
+        .submit {
+            text-align: center;
+            /* Center the submit button horizontally */
+        }
+
+        #submit {
+            border-radius: 800px;
+            width: 107px;
+
+        }
+        #submit:hover{
+            background:red;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius:100px;
+        }
+
+        footer {
+            width: 33%;
+            margin: auto;
+            padding: 2px 4px;
+            display: inline;
+        }
+      p{
+        position:absolute;
+        color:white;
+        margin: 0px 387px;
+        width:33%
+      }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="images.png" alt="logo">
+            <div class="text">Prashu's</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact us</a></li>
+                    <li><a href="#">services</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <input type="search" class="search">
+            <button><a href="log.htm">Login</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <form action="result.htm" method="get">
+            <div class="form">
+                <h3>Join the best gym of delhi new</h3>
+                <div class="name">
+                    <label for="Name">
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </label>
+                </div>
+                <div class="age">
+                    <label for="age">
+                        <input type="text" name="age" id="age" placeholder="Enter your age" required>
+                    </label>
+                </div>
+                <div class="gender">
+                    <label for="gender">
+                        <input type="text" name="gender" id="gender" placeholder="Enter your gender" required>
+                    </label>
+                </div>
+                <div class="locality">
+                    <label for="locality">
+                        <input type="text" name="locality" id="locality" placeholder="Enter your locality" required>
+                    </label>
+                </div>
+                <div class="Email">
+                    <label for="email">
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </label>
+                </div>
+                <div class="number">
+                    <label for="number">
+                        <input type="number" number" id="name" placeholder="Enter your  number" required>
+                    </label>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+            </div>
+    </div>
+    </form>
+    <footer class="foot">
+        <p>&copy;copyright 2019 by <Prashu>. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

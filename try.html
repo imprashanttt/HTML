@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsible Navigation</title>
+    <link rel="stylesheet" href="try.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body onload="reverse()">
+    <section>
+    <header>
+        <div class="main_box">
+        
+        <nav class="navbar">
+            
+                <input type="checkbox" id="check">
+                <div class="btn_one">
+                <label for="check"><i class="fas fa-bars"></i></label></div>
+
+       
+            <div class="logo">
+            <h1>BrainDrift</h1></div>
+            <div class="btn_two">
+                <input type="checkbox" id="check">
+                <label for="check"></label>
+            </div>
+
+            <ul>
+               
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Instructions</a></li>
+                <li><a href="#">License</a></li>
+                <li><a href="#">Versions</a></li>
+            </ul>
+
+            <div class="social-media">
+                <a href="#" class="link">
+                    <i class='bx bxl-facebook-circle' style="color: blue;"></i></a>
+                <a href="#" class="link" ">
+                    <i class='bx bxl-twitter' style="color: white;"></i></a>
+                <a href=" #" class="link""> 
+                    <i class='bx bxl-instagram'style="color: purple;"></i></a>
+                <a href=" #" class="link">
+                    <i class='bx bxl-youtube'style="color: red;"></i></a>
+
+
+
+            </div>
+
+        </nav>
+    </div>
+    </header>
+</section>
+<script >function reverse(){
+    var r=prompt("Enter your number:-");
+    var t=r.split("").reverse().join("");
+   console.log(t);
+   document.write(t);
+
+}
+</script>
+</body>
+
+</html>

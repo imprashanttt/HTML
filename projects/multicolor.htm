@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor</title>
+    <style>
+        :root{
+            --primarycolor:rgb(179, 179, 226);
+            --secondarycolor:rgb(233, 199, 199);
+        }
+     ul{
+            background: var(--secondarycolor);
+            color:var(--secondarycolor);
+            margin:3px;
+            padding:2px;
+
+    
+        }
+        li{
+            display:inline;
+        }
+        li:first-child{
+            /* --primarycolor:blueviolet; */
+            color:black;
+            background: var(--primarycolor);
+            
+        }
+        li:nth-child(2){
+            /* --primarycolor:rgb(174, 165, 182); */
+            color:black;
+            background: var(--primarycolor);
+
+        }
+        li:nth-child(3){
+            /* --primarycolor:rgb(32, 10, 52); */
+            color:white;
+            background: var(--primarycolor);
+
+        }
+
+        li{
+            list-style:none;
+            margin:5px;
+        }
+        body{
+             background-color: var(--primarycolor); 
+        }
+        li:hover{
+            background: var(--secondarycolor);
+            color: var(--primarycolor);
+            font-size: 29px;
+            font-weight: 500;
+            cursor:pointer;
+
+
+        }
+        ul:hover{
+            background: rgb(253, 255, 249);
+            cursor:pointer;
+        }
+
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li></ul>
+        </nav>
+    </header>
+</body>
+</html>

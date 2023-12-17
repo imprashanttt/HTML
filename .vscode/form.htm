@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+
+    <style>
+        body{
+            background-color: black;
+            color:white;
+            font-size:2em;
+            text-transform: capitalize;
+            margin:0;
+            padding:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            top:105px;
+            left:230px;
+            position:absolute;
+
+        }
+        input{
+            margin:14px;
+            padding:3px;
+        }
+        .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+form {
+    border: 2px solid red;
+    width: 33%; /* Set the width to 33% of its container */
+    padding: 45px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Regsitration form</h1>
+        <form action="result.htm" method="get">
+            <input type="text" placeholder="Enter your name">       
+            <input type="text" placeholder="Enter your age">       
+            <input type="text" placeholder="Enter your friend name">       
+            <input type="text" placeholder="Enter your other details">       
+         </form>
+    </div>
+</body>
+</html>
