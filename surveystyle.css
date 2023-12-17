@@ -10,6 +10,27 @@
     background-attachment:scroll;
 
 }
+ 
+nav{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color: rgba(255, 192, 203, 0.514);
+}
+ul{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    list-style:none;
+    background-color: rgba(255, 192, 203, 0.514);
+}
+li{
+    padding:20px;
+    margin:12px;
+    list-style:none;
+   background-color: transparent;
+
+}
 
 h1{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -37,10 +58,5 @@ form{
     box-sizing:  border-box;
     text-shadow: -1px 3px 1px yellow;
   
-
-}
-li{
-    list-style-type:decimal-leading-zero;
-    list-style-position: inside;
 
 }
